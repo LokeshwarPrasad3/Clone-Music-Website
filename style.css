@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: antiquewhite;
+
+  /* font-family: 'Signika', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Signika Negative', sans-serif;
+  font-family: 'Bitter', serif; */
+  font-family: 'Bree Serif', serif;
+}
+/* navbar design */
+#navbar {
+  display: flex;
+  min-width: 100%;
+  height: 70px;
+  background-color: rgb(158, 97, 216);
+  background-color: rgb(29, 27, 27);
+}
+#header {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  position: relative;
+  top: 4px;
+}
+#navbar #header .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar #header .brand img {
+  width: 11rem;
+  margin-left: 3rem;
+}
+#ul {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 2rem;
+  gap: 0;
+}
+
+#ul li {
+  list-style: none;
+  color: white;
+  margin: 2%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: 0.3s all ease-in;
+}
+#ul .nav-user {
+  background-color: rgb(129, 65, 65);
+  border-radius: 50px;
+  padding: 9px 13px;
+}
+
+#ul li:hover {
+  color: red;
+  background-color: white;
+}
+
+/* main content */
+#main-content {
+  min-height: 66vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 20px auto;
+  border-radius: 10px;
+  width: 97%;
+  background-image: url("./Images/background-1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.heading {
+  color: white;
+  padding: 20px 40px;
+  font-family: 'Signika Negative', sans-serif;
+
+}
+
+.song-list {
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.song-list span {
+  color: black;
+}
+/* song items */
+.song-items .cover-img {
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+}
+.song-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+  width: 95%;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.list-play {
+  cursor: pointer;
+  color: black;
+  font-size: 30px;
+}
+.list-play:hover {
+  color: rgb(231, 185, 124);
+}
+.song-list-play {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* song navigation style */
+.song-navigation {
+  position: sticky;
+  height: 140px;
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 4rem;
+}
+/* wave desing */
+.wave-info {
+  padding-top: 2px;
+  padding-left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  left: 0;
+}
+.wave-info p {
+  font-size: 0.9rem;
+  color: white;
+  padding-left: 10px;
+  padding-top: 9px;
+}
+.wave-info img {
+  width: 60px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+.music-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* progress bar */
+#music-progress {
+  width: 100%;
+  cursor: pointer;
+  padding: 5px;
+}
+.music-icon {
+  cursor: pointer;
+  position: relative;
+  top: 16px;
+  color: white;
+  font-size: 30px;
+  padding: 0 10px;
+  transition: 0.4s all ease-in;
+}
+.music-icon:hover {
+  color: rgb(231, 185, 124);
+}
+
+@media (max-width: 1140px) {
+  .song-list {
+    padding-left: 0px;
+    width: 70%;
+  }
+  /* main content */
+  #main-content {
+    background-repeat: repeat;
+  }
+  /* heading of song list */
+  .heading {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  /* brand image size change */
+  #navbar #header .brand img {
+    width: 10rem;
+    margin-left: 1rem;
+  }
+  #ul {
+    padding-right: 5px;
+  }
+  #ul li {
+    margin: 0%;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 700px) {
+  .song-list {
+    width: 95%;
+    margin-left: 2%;
+  }
+  #navbar #header .brand img {
+    width: 9rem;
+    margin-left: 0.5rem;
+  }
+  #ul li {
+    margin: 0%;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 492px) {
+  #heading {
+    font-size: 1.4rem;
+  }
+  .song-list span {
+    font-size: 0.9rem;
+  }
+  /* move the gif of wave */
+  .wave-info {
+    top: 5px;
+  }
+  #ul li {
+    padding: 3px 7px;
+    font-size: 1rem;
+  }
+  #ul .nav-user {
+    margin-left: 0.6rem;
+}
+}
+@media (max-width: 400px) {
+  #navbar #header .brand img {
+    width: 8rem;
+  }
+  #ul li {
+    font-size: 1rem;
+  }
+  #heading {
+    font-size: 1.2rem;
+  }
+
+  
+  .song-list span {
+    font-size: 0.7rem;
+  }
+}
