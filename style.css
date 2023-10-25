@@ -192,7 +192,13 @@ body {
 .music-icon:hover {
   color: rgb(231, 185, 124);
 }
-
+.nav-list a{
+  text-decoration: none;
+  color: white;
+}
+.nav-list a:hover{
+  color:red;
+}
 @media (max-width: 1140px) {
   .song-list {
     padding-left: 0px;
