@@ -52,14 +52,14 @@ function updateDurationInHTML(songIndex, duration) {
 // songs details
 let songs = [
     { songName: "Beshram-rang", filePath: './Songs/Besharam-Rang.mp3', coverPath: './Cover/beshram-rang.jpg' },
-    { songName: "Desh-mere", filePath: './Songs/Desh-mere.mp3', coverPath: './Cover/desh-mere.jpg' },
-    { songName: "Main-Teri-Ho-Gayi", filePath: './Songs/Main-Teri-Ho-Gayi.mp3', coverPath: './Cover/main-teri-ho-gayi.jpg' },
-    { songName: "Tu-Milta-Hai-Mujhe", filePath: './Songs/Tu-Milta-Hai-Mujhe.mp3', coverPath: './Cover/tu-milta-hai-mujhe.jpg' },
+    { songName: "Jawan movie song", filePath: './Songs/jawan-songs.m4a', coverPath: './Cover/jawan.jpg' },
+    { songName: "Bramhastra song", filePath: './Songs/bramhastra-song.mp3', coverPath: './Cover/bramhastra-cover.jpg' },
+    { songName: "Naino ne bandhi .", filePath: './Songs/naino-ne-bandhi.m4a', coverPath: './Cover/naino-ne-bandhi.jpg' },
     { songName: "Teri-Ankho-me", filePath: './Songs/teri-ankhon.mp3', coverPath: './Cover/teri-ankho-me.jpeg' },
     { songName: "Pushpa-song", filePath: './Songs/Pushpa-song.mp3', coverPath: './Cover/pushpa-song.jpg' },
+    { songName: "apna-bna-le Piya", filePath: './Songs/apna-bna-le.mp3', coverPath: './Cover/apna-bna-le.jpg' },
     { songName: "Bahalara-la", filePath: './Songs/Baharala-la-madhumas.mp3', coverPath: './Cover/baharala-la.jpg' },
-    { songName: "Teri-Ankho-me", filePath: './Songs/teri-ankhon.mp3', coverPath: './Cover/teri-ankho-me.jpeg' },
-    { songName: "Saude-Bazi", filePath: './Songs/Saude-Bazi.mp3', coverPath: './Cover/saude-bazi.jpg' }
+    { songName: "Tere-Bina Song", filePath: './Songs/bin-tere-kya-jina.mp3', coverPath: './Cover/teri-ankho-me.jpeg' },
 ]
 
 // Asynchronously set the duration for each song and update HTML
